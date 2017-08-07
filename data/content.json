@@ -1,2 +1,203 @@
-{}
-
+{
+  "pageLinks": [
+    {
+      "display": "PDF",
+      "link": "uriel-kugelmass-resume.pdf",
+      "iconName": "fa-file-pdf-o"
+    },
+    {
+      "display": "Source",
+      "link": "https://github.com/UrielKugelmass/resume",
+      "iconName": "fa-file-code-o"
+    }
+  ],
+  "nameplate": {
+    "firstName": "Uriel",
+    "lastName": "Kugelmass",
+    "icons": [
+      {
+        "display": "urikugelmass@gmail.com",
+        "link": "mailto:urikugelmass@gmail.com",
+        "iconName": "fa-envelope"
+      },
+      {
+        "display": "(512) 850-1685",
+        "link": "",
+        "iconName": "fa-mobile"
+      },
+      {
+        "display": "urielkugelmass.co",
+        "link": "http://urielkugelmass.co",
+        "iconName": "fa-globe"
+      },
+      {
+        "display": "urielkugelmass",
+        "link": "https://www.linkedin.com/in/urielkugelmass",
+        "iconName": "fa-linkedin"
+      },
+      {
+        "display": "urielkugelmass",
+        "link": "https://github.com/urielkugelmass",
+        "iconName": "fa-github"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "header": "Education",
+      "items": [
+        {
+          "title": "The University of Texas at Austin",
+          "secondaryTitle": "Bachelors of Science in Computer Science",
+          "duration": "Spring 2019",
+          "bullets": [
+            "Business Foundations Program",
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Experience",
+      "items": [
+        {
+          "title": "Ultimate Software, INC",
+          "location": "Weston, FL",
+          "secondaryTitle": "Software Engineering Intern",
+          "duration": "May 2017 - August 2017",
+          "bullets": [
+            "Built a UI to be used within a microservices architecture using Angular 4, used 3 to visualize dependencies in a graph",
+            "Added new components and features to an existing application used by numerous directors on a daily basis using KnockoutJS for the front-end and C# (ASP .NET WEB API 2) for the back-end",
+            "Presented the new application to the directors"
+          ]
+        },
+        {
+          "title": "Collokia, LLC",
+          "location": "Montevideo, Uruguay",
+          "secondaryTitle": "Quality Assurance Intern",
+          "duration": "June 2016 - August 2016",
+          "bullets": [
+            "Built a test automation framework from scratch in JavaScript using Selenium Webdriver for the company's application",
+            "Reviewed failed tests with senior software developers and reported directly to the company's CTO about progress and problems encountered"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Achievements",
+      "items": [
+        {
+          "title": "Good Neighbor Scholarship",
+          "duration": "Spring 2016, Spring 2017",
+          "bullets": [
+            "Awarded by the Texas Higher Education Coordinating Board"
+          ]
+        },
+        {
+          "title": "University Honors",
+          "duration": "Fall 2015, Spring 2016, Fall 2016, Spring 2017",
+        }
+      ]
+    },
+    {
+      "header": "Projects",
+      "items": [
+        {
+          "title": "Huffman Coding",
+          "bullets": [
+            "Built a program to compress and decompress different files using Huffman's algorithm"
+          ]
+        },
+        {
+          "title": "Dijkstra",
+          "bullets": [
+            "Built a program that implements Dijkstra's algorithm to determine the top ranked football team in a year"
+          ]
+        },
+        {
+          "title": "Pintos",
+          "bullets": [
+            "Implemented several parts of an OS (Threads, various system calls, virtual memory, file system)"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Academic Involvement",
+      "items": [
+        {
+          "title": "The University of Texas",
+          "secondaryTitle": "Introduction to programming and data structures tutor",
+          "duration": "Fall 2017",
+          "bullets": [
+            "Assisted students in learning java programming and data structures in Java"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Skills",
+      "skills": [
+        {
+          "category": "Languages",
+          "items": [
+            "Java",
+            "Python",
+            "SQL",
+            "C#"
+          ]
+        },
+        {
+          "category": "Web Development",
+          "items": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript"
+          ]
+        },
+        {
+          "category": "Tools/Frameworks",
+          "items": [
+            "Angular 4",
+            "KnockoutJS",
+            ".NET",
+            "Selenium",
+            "Jasmine",
+            "Protractor"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Coursework",
+      "items":[
+        {
+          "bullets": [
+            "Introduction to programming",
+            "Data structures",
+            "Computer organization and architecture",
+            "Discrete mathematics",
+            "Foundations of logical thought",
+            "Data management",
+            "Introduction to probability and statistics",
+            "Principles of computer systems",
+            "Algorithms and complexity"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Foreign Languages",
+      "items": [
+        {
+          "bullets":
+          [
+            "Spanish - Native Speaker",
+            "Hebrew - Fluent",
+            "Portuguese - Conversant"
+          ]
+        }
+      ]
+    }
+  ]
+}

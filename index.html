@@ -1,6 +1,109 @@
 <!DOCTYPE html><html>
 <head>
+  <meta charset="UTF-8">
+ <title>Uriel Kugelmass - Resume</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css?v=2.0">
 </head>
-<body>
+<body
+<div class="resume-body">
+
+    <!-- NAMEPLATE (name, contact info) -->
+    <div class="nameplate">
+
+      <!-- Name -->
+      <div class="name">
+        <span class="first-name">{{ site.data.content.nameplate.firstName }}</span>
+        <span class="last-name">{{ site.data.content.nameplate.lastName }}</span>
+      </div>
+      <!-- /Name -->
+
+      <!-- Contact Info -->
+      <div class="icons">
+        {% for icon in site.data.content.nameplate.icons %}
+          <a href={{ icon.link }}>
+            <i class="fa {{ icon.iconName }}" aria-hidden="true"></i>
+            {{ icon.display }}
+          </a>
+        {% endfor %}
+      </div>
+      <!-- /Contact Info -->
+
+    </div>
+    <!-- /NAMEPLATE -->
+
+    <!-- SECTIONS -->
+    {% for section in site.data.content.sections %}
+      <div class="resume-section">
+
+        <!-- SectionHeader ("Employment", "Education", etc.) -->
+        <div class="section-header">
+          {{ section.header }}
+        </div>
+        <!-- /SectionHeader -->
+
+        <!-- SectionItems -->
+        {% for item in section.items %}
+          <div class="section-item">
+
+            <!-- ItemInfo (title, location, subtitle, duration) -->
+            <span class="item-title">{{ item.title }}</span>
+            <span class="item-location">{{ item.location }}</span>
+            <span class="item-secondary-title">{{ item.secondaryTitle }}</span>
+            <span class="item-duration">{{ item.duration }}</span>
+            <!-- /ItemInfo -->
+
+            <!-- ItemBullets -->
+            <ul class="item-bullets">
+              {% for bullet in item.bullets %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+            <!-- /ItemBullets -->
+
+          </div>
+        {% endfor %}
+        <!-- /SectionItems -->
+
+        <!-- Skills -->
+        {% if section.skills %}
+        <ul class="skill-items">
+          {% for skill in section.skills %}
+            <li>
+              <span class="skill-category">{{ skill.category }}:</span>
+              {% for skillItem in skill.items %}
+                {% if forloop.last %}
+                  <span class="skill-item">{{ skillItem }}</span>
+                {% else %}
+                  <span class="skill-item">{{ skillItem }},</span>
+                {% endif %}
+              {% endfor %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        <!-- /Skills -->
+
+      </div>
+    {% endfor %}
+    <!-- SECTIONS -->
+
+  </div>
+
+  <!-- PageLinks (PDF, GitHub source) -->
+  <div class="page-links">
+    {% for pageLink in site.data.content.pageLinks %}
+      <a href={{ pageLink.link }}>
+        <i class="fa {{ pageLink.iconName }}" aria-hidden="true"></i>
+        {{ pageLink.display }}
+      </a>
+    {% endfor %}
+  </div>
+  <!-- /PageLinks -->
+
 </body>
 </html>
